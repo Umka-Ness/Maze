@@ -30,6 +30,7 @@
     background: #558834;
     border:solid 2px #8fff;
     z-index: -1;
+    border-radius: 10px;
     
 }
 .wrap {
