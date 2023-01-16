@@ -16,7 +16,7 @@ document.addEventListener("keydown", event => {
         right -=10
         elemTwo.style.left = left + "px"
         elemTwo.style.right = right + "px"
-        console.log()
+        console.log(left,right)
 
     }
     else if (event.code === "ArrowDown") {
@@ -41,26 +41,34 @@ document.addEventListener("keydown", event => {
         elemTwo.style.right = right + "px"
         elemTwo.style.left = left + "px"
     }
-
-
-    function checer(up,bootom,right,left,element) {
         if (right > 0  || left < -10) {
-            element.style.right = 0 + "px"
+            // return right = 0,left = 0,element.style.right = 0 + "px",elemTwo.style.left = 0 + "px"
+            right = 0
+            left = 0
+            elemTwo.style.right = 0 + "px"
             elemTwo.style.left = 0 + "px"
         }
         else if (up > 350 || bootom < - 350){
-            element.style.top = 350 + "px"
-            element.style.bootom = -350 + "px"
+            // return up = 350,bootom = -350,element.style.top = 350 + "px",element.style.bootom = -350 + "px"
+            up = 350
+            bootom = -350
+            elemTwo.style.top = 350 + "px"
+            elemTwo.style.bootom = -350 + "px"
         }
         else if (up < 0  || bootom > 0){
-            element.style.top = 0 + "px"
-            element.style.bootom = 0 + "px"
+            // return up = 0,bootom = 0,element.style.top = 0 + "px",element.style.bootom = 0 + "px"
+            up = 0
+            bootom = 0
+            elemTwo.style.top = 0 + "px"
+            elemTwo.style.bootom = 0 + "px"
         }
         else if (left > 350 || right < - 350){
-            element.style.right = -350 + "px"
-            element.style.left = 350 + "px"
+            // return right = -350,left = 350,element.style.right = -350 + "px",element.style.left = 350 + "px"
+            right = -350
+            left = 350
+            elemTwo.style.right = -350 + "px"
+            elemTwo.style.left = 350 + "px"
         }
-      }
-      checer(up,bootom,right,left,elemTwo)
+      console.log(up,bootom,left,right)
   });
 
