@@ -69,6 +69,9 @@ document.addEventListener("keydown", event => {
             elemTwo.style.right = -350 + "px"
             elemTwo.style.left = 350 + "px"
         }
+        else if (elemTwo.style.top === 150 + "px" && elemTwo.style.bootom === -150 + "px" && elemTwo.style.left === 170 + "px" && elemTwo.style.right === -170 + "px") {
+            console.log("ТЫ В ЦЕНТРЕ!!!!")
+        }
       console.log(up,bootom,left,right)
   });
 
